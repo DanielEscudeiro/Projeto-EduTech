@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{510AAF68-979C-4D89-AC31-C4D0FF2835F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EduTech</RootNamespace>
+    <AssemblyName>EduTech</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Análise de Sistemas\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>20</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/EduTech/</UpdateUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>EduTech</ProductName>
+    <PublisherName>EduTech</PublisherName>
+    <MinimumRequiredVersion>1.0.0.3</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo Projeto Oficial.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>EduTech.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9B7C9D06EC8306F82EF9561FAA957014D2D2538F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EduTech_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="animais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="animais.Designer.cs">
+      <DependentUpon>animais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.cs">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Divisao.cs" />
+    <Compile Include="Classes\Multiplicacao.cs" />
+    <Compile Include="Classes\Soma.cs" />
+    <Compile Include="Classes\Subtracao.cs" />
+    <Compile Include="cores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cores.designer.cs">
+      <DependentUpon>cores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioNumero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioNumero.Designer.cs">
+      <DependentUpon>FormularioNumero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paginainicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paginainicial.Designer.cs">
+      <DependentUpon>paginainicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frutas.Designer.cs">
+      <DependentUpon>frutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Silabas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Silabas.Designer.cs">
+      <DependentUpon>Silabas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alfabeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alfabeto.Designer.cs">
+      <DependentUpon>Alfabeto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="animais.resx">
+      <DependentUpon>animais.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cores.resx">
+      <DependentUpon>cores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioNumero.resx">
+      <DependentUpon>FormularioNumero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paginainicial.resx">
+      <DependentUpon>paginainicial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frutas.resx">
+      <DependentUpon>frutas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Silabas.resx">
+      <DependentUpon>Silabas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alfabeto.resx">
+      <DependentUpon>Alfabeto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="EduTech_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo Projeto Oficial.ico" />
+    <Content Include="Logo-Branca-_3_.ico" />
+    <Content Include="mp3\A.mp3" />
+    <Content Include="mp3\Abacate.mp3" />
+    <Content Include="mp3\Abacaxi.mp3" />
+    <Content Include="mp3\AL.mp3" />
+    <Content Include="mp3\AMARELO.mp3" />
+    <Content Include="mp3\AN.mp3" />
+    <Content Include="mp3\AR.mp3" />
+    <Content Include="mp3\Arara.mp3" />
+    <Content Include="mp3\AraraF.mp3" />
+    <Content Include="mp3\AS.mp3" />
+    <Content Include="mp3\AZUL.mp3" />
+    <Content Include="mp3\B.mp3" />
+    <Content Include="mp3\BA.mp3" />
+    <Content Include="mp3\Banana.mp3" />
+    <Content Include="mp3\BE.mp3" />
+    <Content Include="mp3\BI.mp3" />
+    <Content Include="mp3\BLA.mp3" />
+    <Content Include="mp3\BLE.mp3" />
+    <Content Include="mp3\BLI.mp3" />
+    <Content Include="mp3\BLO.mp3" />
+    <Content Include="mp3\BLU.mp3" />
+    <Content Include="mp3\BO.mp3" />
+    <Content Include="mp3\BRA.mp3" />
+    <Content Include="mp3\BRANCO.mp3" />
+    <Content Include="mp3\BRE.mp3" />
+    <Content Include="mp3\BRI.mp3" />
+    <Content Include="mp3\BRO.mp3" />
+    <Content Include="mp3\BRU.mp3" />
+    <Content Include="mp3\BU.mp3" />
+    <Content Include="mp3\BÃO.mp3" />
+    <Content Include="mp3\C.mp3" />
+    <Content Include="mp3\CA.mp3" />
+    <Content Include="mp3\cachorro.mp3" />
+    <Content Include="mp3\CachorroL.mp3" />
+    <Content Include="mp3\Cavalo.mp3" />
+    <Content Include="mp3\CavaloR.mp3" />
+    <Content Include="mp3\CHA.mp3" />
+    <Content Include="mp3\CHE.mp3" />
+    <Content Include="mp3\CHO.mp3" />
+    <Content Include="mp3\CHU.mp3" />
+    <Content Include="mp3\CLA.mp3" />
+    <Content Include="mp3\CLE.mp3" />
+    <Content Include="mp3\CLI.mp3" />
+    <Content Include="mp3\CLO.mp3" />
+    <Content Include="mp3\CLU.mp3" />
+    <Content Include="mp3\CO.mp3" />
+    <Content Include="mp3\Coruja.mp3" />
+    <Content Include="mp3\CorujaC.mp3" />
+    <Content Include="mp3\CRA.mp3" />
+    <Content Include="mp3\CRE.mp3" />
+    <Content Include="mp3\CRI.mp3" />
+    <Content Include="mp3\CRO.mp3" />
+    <Content Include="mp3\CRU.mp3" />
+    <Content Include="mp3\CU.mp3" />
+    <Content Include="mp3\CÃO.mp3" />
+    <Content Include="mp3\D.mp3" />
+    <Content Include="mp3\DA.mp3" />
+    <Content Include="mp3\DE.mp3" />
+    <Content Include="mp3\DI.mp3" />
+    <Content Include="mp3\DO.mp3" />
+    <Content Include="mp3\DRA.mp3" />
+    <Content Include="mp3\DRE.mp3" />
+    <Content Include="mp3\DRI.mp3" />
+    <Content Include="mp3\DRO.mp3" />
+    <Content Include="mp3\DRU.mp3" />
+    <Content Include="mp3\DU.mp3" />
+    <Content Include="mp3\DÃO.mp3" />
+    <Content Include="mp3\E.mp3" />
+    <Content Include="mp3\EL.mp3" />
+    <Content Include="mp3\Elefante.mp3" />
+    <Content Include="mp3\ElefanteA.mp3" />
+    <Content Include="mp3\EN.mp3" />
+    <Content Include="mp3\ER.mp3" />
+    <Content Include="mp3\ES.mp3" />
+    <Content Include="mp3\F.mp3" />
+    <Content Include="mp3\FA.mp3" />
+    <Content Include="mp3\FE.mp3" />
+    <Content Include="mp3\FI.mp3" />
+    <Content Include="mp3\FLA.mp3" />
+    <Content Include="mp3\FLE.mp3" />
+    <Content Include="mp3\FLI.mp3" />
+    <Content Include="mp3\FLO.mp3" />
+    <Content Include="mp3\FLU.mp3" />
+    <Content Include="mp3\FO.mp3" />
+    <Content Include="mp3\FRA.mp3" />
+    <Content Include="mp3\FRE.mp3" />
+    <Content Include="mp3\FRI.mp3" />
+    <Content Include="mp3\FRO.mp3" />
+    <Content Include="mp3\FRU.mp3" />
+    <Content Include="mp3\FU.mp3" />
+    <Content Include="mp3\FÃO.mp3" />
+    <Content Include="mp3\G.mp3" />
+    <Content Include="mp3\GA.mp3" />
+    <Content Include="mp3\Galinha.mp3" />
+    <Content Include="mp3\GalinhaC.mp3" />
+    <Content Include="mp3\Gato.mp3" />
+    <Content Include="mp3\GatoM.mp3" />
+    <Content Include="mp3\GLA.mp3" />
+    <Content Include="mp3\GLE.mp3" />
+    <Content Include="mp3\GLI.mp3" />
+    <Content Include="mp3\GLO.mp3" />
+    <Content Include="mp3\GLU.mp3" />
+    <Content Include="mp3\GO.mp3" />
+    <Content Include="mp3\GRA.mp3" />
+    <Content Include="mp3\GRE.mp3" />
+    <Content Include="mp3\GRI.mp3" />
+    <Content Include="mp3\GRO.mp3" />
+    <Content Include="mp3\GRU.mp3" />
+    <Content Include="mp3\GU.mp3" />
+    <Content Include="mp3\GUE.mp3" />
+    <Content Include="mp3\GUI.mp3" />
+    <Content Include="mp3\GUO.mp3" />
+    <Content Include="mp3\GÃO.mp3" />
+    <Content Include="mp3\H.mp3" />
+    <Content Include="mp3\HA.mp3" />
+    <Content Include="mp3\HE.mp3" />
+    <Content Include="mp3\HI.mp3" />
+    <Content Include="mp3\HO.mp3" />
+    <Content Include="mp3\HU.mp3" />
+    <Content Include="mp3\HÃO.mp3" />
+    <Content Include="mp3\I.mp3" />
+    <Content Include="mp3\IL.mp3" />
+    <Content Include="mp3\IN.mp3" />
+    <Content Include="mp3\IR.mp3" />
+    <Content Include="mp3\IS.mp3" />
+    <Content Include="mp3\J.mp3" />
+    <Content Include="mp3\JA.mp3" />
+    <Content Include="mp3\JE.mp3" />
+    <Content Include="mp3\JI.mp3" />
+    <Content Include="mp3\JO.mp3" />
+    <Content Include="mp3\JU.mp3" />
+    <Content Include="mp3\JÃO.mp3" />
+    <Content Include="mp3\K.mp3" />
+    <Content Include="mp3\L.mp3" />
+    <Content Include="mp3\LA.mp3" />
+    <Content Include="mp3\LARANJA %282%29.mp3" />
+    <Content Include="mp3\Laranja.mp3" />
+    <Content Include="mp3\LE.mp3" />
+    <Content Include="mp3\LeaoR.mp3" />
+    <Content Include="mp3\Leão.mp3" />
+    <Content Include="mp3\LHA.mp3" />
+    <Content Include="mp3\LHE.mp3" />
+    <Content Include="mp3\LHI.mp3" />
+    <Content Include="mp3\LHO.mp3" />
+    <Content Include="mp3\LHU.mp3" />
+    <Content Include="mp3\LI.mp3" />
+    <Content Include="mp3\LO.mp3" />
+    <Content Include="mp3\LU.mp3" />
+    <Content Include="mp3\LÃO.mp3" />
+    <Content Include="mp3\M.mp3" />
+    <Content Include="mp3\MA.mp3" />
+    <Content Include="mp3\Macaco.mp3" />
+    <Content Include="mp3\MacacoM.mp3" />
+    <Content Include="mp3\Mamão.mp3" />
+    <Content Include="mp3\Manga.mp3" />
+    <Content Include="mp3\MARROM.mp3" />
+    <Content Include="mp3\Maçã.mp3" />
+    <Content Include="mp3\ME.mp3" />
+    <Content Include="mp3\Melancia.mp3" />
+    <Content Include="mp3\MI.mp3" />
+    <Content Include="mp3\MO.mp3" />
+    <Content Include="mp3\Morango.mp3" />
+    <Content Include="mp3\MU.mp3" />
+    <Content Include="mp3\MÃO.mp3" />
+    <Content Include="mp3\N.mp3" />
+    <Content Include="mp3\NA.mp3" />
+    <Content Include="mp3\NE.mp3" />
+    <Content Include="mp3\NHA.mp3" />
+    <Content Include="mp3\NHE.mp3" />
+    <Content Include="mp3\NHI.mp3" />
+    <Content Include="mp3\NHO.mp3" />
+    <Content Include="mp3\NHU.mp3" />
+    <Content Include="mp3\NI.mp3" />
+    <Content Include="mp3\NO.mp3" />
+    <Content Include="mp3\NU.mp3" />
+    <Content Include="mp3\Num0.mp3" />
+    <Content Include="mp3\Num1.mp3" />
+    <Content Include="mp3\Num10.mp3" />
+    <Content Include="mp3\Num2.mp3" />
+    <Content Include="mp3\Num3.mp3" />
+    <Content Include="mp3\Num4.mp3" />
+    <Content Include="mp3\Num5.mp3" />
+    <Content Include="mp3\Num6.mp3" />
+    <Content Include="mp3\Num7.mp3" />
+    <Content Include="mp3\Num8.mp3" />
+    <Content Include="mp3\Num9.mp3" />
+    <Content Include="mp3\NÃO.mp3" />
+    <Content Include="mp3\O.mp3" />
+    <Content Include="mp3\OL.mp3" />
+    <Content Include="mp3\ON.mp3" />
+    <Content Include="mp3\OR.mp3" />
+    <Content Include="mp3\OS.mp3" />
+    <Content Include="mp3\P.mp3" />
+    <Content Include="mp3\PA.mp3" />
+    <Content Include="mp3\PE.mp3" />
+    <Content Include="mp3\Pera.mp3" />
+    <Content Include="mp3\PI.mp3" />
+    <Content Include="mp3\Pitaya.mp3" />
+    <Content Include="mp3\PLA.mp3" />
+    <Content Include="mp3\PLE.mp3" />
+    <Content Include="mp3\PLI.mp3" />
+    <Content Include="mp3\PLO.mp3" />
+    <Content Include="mp3\PLU.mp3" />
+    <Content Include="mp3\PO.mp3" />
+    <Content Include="mp3\PRA.mp3" />
+    <Content Include="mp3\PRE.mp3" />
+    <Content Include="mp3\PRETO.mp3" />
+    <Content Include="mp3\PRI.mp3" />
+    <Content Include="mp3\PRO.mp3" />
+    <Content Include="mp3\PRU.mp3" />
+    <Content Include="mp3\PU.mp3" />
+    <Content Include="mp3\PÃO.mp3" />
+    <Content Include="mp3\Q.mp3" />
+    <Content Include="mp3\QUA.mp3" />
+    <Content Include="mp3\QUO.mp3" />
+    <Content Include="mp3\QUÃO.mp3" />
+    <Content Include="mp3\R.mp3" />
+    <Content Include="mp3\RA.mp3" />
+    <Content Include="mp3\RE.mp3" />
+    <Content Include="mp3\RI.mp3" />
+    <Content Include="mp3\RO.mp3" />
+    <Content Include="mp3\ROSA.mp3" />
+    <Content Include="mp3\ROXO.mp3" />
+    <Content Include="mp3\RU.mp3" />
+    <Content Include="mp3\RÃO.mp3" />
+    <Content Include="mp3\S.mp3" />
+    <Content Include="mp3\SA.mp3" />
+    <Content Include="mp3\Sapo.mp3" />
+    <Content Include="mp3\SapoW.mp3" />
+    <Content Include="mp3\SE.mp3" />
+    <Content Include="mp3\SI.mp3" />
+    <Content Include="mp3\SO.mp3" />
+    <Content Include="mp3\SU.mp3" />
+    <Content Include="mp3\SÃO.mp3" />
+    <Content Include="mp3\T.mp3" />
+    <Content Include="mp3\TA.mp3" />
+    <Content Include="mp3\TE.mp3" />
+    <Content Include="mp3\TI.mp3" />
+    <Content Include="mp3\TLA.mp3" />
+    <Content Include="mp3\TLE.mp3" />
+    <Content Include="mp3\TLI.mp3" />
+    <Content Include="mp3\TLO.mp3" />
+    <Content Include="mp3\TLU.mp3" />
+    <Content Include="mp3\TO.mp3" />
+    <Content Include="mp3\TRA.mp3" />
+    <Content Include="mp3\TRE.mp3" />
+    <Content Include="mp3\TRI.mp3" />
+    <Content Include="mp3\TRO.mp3" />
+    <Content Include="mp3\TRU.mp3" />
+    <Content Include="mp3\TU.mp3" />
+    <Content Include="mp3\TÃO.mp3" />
+    <Content Include="mp3\U.mp3" />
+    <Content Include="mp3\UL.mp3" />
+    <Content Include="mp3\UN.mp3" />
+    <Content Include="mp3\UR.mp3" />
+    <Content Include="mp3\US.mp3" />
+    <Content Include="mp3\Uva.mp3" />
+    <Content Include="mp3\V.mp3" />
+    <Content Include="mp3\VA.mp3" />
+    <Content Include="mp3\VE.mp3" />
+    <Content Include="mp3\VERDE.mp3" />
+    <Content Include="mp3\VERMELHO.mp3" />
+    <Content Include="mp3\VI.mp3" />
+    <Content Include="mp3\VLA.mp3" />
+    <Content Include="mp3\VLE.mp3" />
+    <Content Include="mp3\VLI.mp3" />
+    <Content Include="mp3\VLO.mp3" />
+    <Content Include="mp3\VLU.mp3" />
+    <Content Include="mp3\VO.mp3" />
+    <Content Include="mp3\VRA.mp3" />
+    <Content Include="mp3\VRE.mp3" />
+    <Content Include="mp3\VRI.mp3" />
+    <Content Include="mp3\VRO.mp3" />
+    <Content Include="mp3\VRU.mp3" />
+    <Content Include="mp3\VU.mp3" />
+    <Content Include="mp3\VÃO.mp3" />
+    <Content Include="mp3\W.mp3" />
+    <Content Include="mp3\X.mp3" />
+    <Content Include="mp3\XA.mp3" />
+    <Content Include="mp3\XE.mp3" />
+    <Content Include="mp3\XI.mp3" />
+    <Content Include="mp3\XO.mp3" />
+    <Content Include="mp3\XU.mp3" />
+    <Content Include="mp3\XÃO.mp3" />
+    <Content Include="mp3\Y.mp3" />
+    <Content Include="mp3\Z.mp3" />
+    <Content Include="mp3\ZA.mp3" />
+    <Content Include="mp3\ZE.mp3" />
+    <Content Include="mp3\ZI.mp3" />
+    <Content Include="mp3\ZO.mp3" />
+    <Content Include="mp3\ZU.mp3" />
+    <Content Include="mp3\ZÃO.mp3" />
+    <Content Include="mp3\ÃO.mp3" />
+    <None Include="Resources\Numeros panel desfocado.png" />
+    <None Include="Resources\ABC panel desfocado.png" />
+    <None Include="Resources\galinha-marrom-em-um-fundo-branco_51195-548.jpg" />
+    <None Include="Resources\leao1.jpg" />
+    <None Include="Resources\Cachorro1.jpg" />
+    <None Include="Resources\sapo.jpg" />
+    <None Include="Resources\MACACO.jpg" />
+    <None Include="Resources\leao.jpg" />
+    <None Include="Resources\Gato.jpg" />
+    <None Include="Resources\elefante.jpg" />
+    <None Include="Resources\coruja.jpg" />
+    <None Include="Resources\Cavalo.jpg" />
+    <None Include="Resources\Cachorro.jpg" />
+    <None Include="Resources\Arara.jpg" />
+    <None Include="Resources\banan1.jpg" />
+    <None Include="Resources\morango-no-fundo-branco.jpg" />
+    <None Include="Resources\Melancia.jpg" />
+    <None Include="Resources\Manga.jpg" />
+    <None Include="Resources\Laranja.jpg" />
+    <None Include="Resources\Mamão.jpg" />
+    <None Include="Resources\Abacate.jpg" />
+    <None Include="Resources\Maçã.jpg" />
+    <None Include="Resources\Abacaxi.jpg" />
+    <None Include="Resources\uva 1.jpg" />
+    <None Include="Resources\pera.jpg" />
+    <None Include="Resources\Numeros.jpg" />
+    <None Include="Resources\education_school_blocks_building_study_learn_numbers_icon_133453.png" />
+    <None Include="Resources\animais panel desfocado.png" />
+    <None Include="Resources\Pomar panel desfocado %282%29.png" />
+    <None Include="Resources\Icone.png.png" />
+    <None Include="Resources\Foto Oficial Panel %281%29.png" />
+    <None Include="Resources\Numero 9.png" />
+    <None Include="Resources\Numero 8.png" />
+    <None Include="Resources\Numero 7.png" />
+    <None Include="Resources\Numero 6.png" />
+    <None Include="Resources\Numero 5.png" />
+    <None Include="Resources\Numero 4.png" />
+    <None Include="Resources\Numero 3.png" />
+    <None Include="Resources\Numero 2.png" />
+    <None Include="Resources\Numero 1.png" />
+    <None Include="Resources\Numero 0.png" />
+    <None Include="Resources\Sílabas Icone.png" />
+    <None Include="Resources\abc.png" />
+    <None Include="Resources\abc.jpg" />
+    <None Include="Resources\Animais.jpg" />
+    <None Include="Resources\Frutas.jpg" />
+    <None Include="Resources\pagina principal panel desfocado.png" />
+    <None Include="Resources\Silabas panel desfocado.png" />
+    <None Include="Resources\ABC Fundopng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
